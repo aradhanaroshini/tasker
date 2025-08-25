@@ -1,0 +1,10 @@
+*{
+    background-color: blue;
+}
+.taskbox{
+    position: absolute;
+    top:45%;
+    left:45%;
+
+
+}
