@@ -1,3 +1,7 @@
-document.getElementById('addTask').addEventListener('click',function(){
-    document.getElementById('todo').innerHTML==document.getElementById('task').value;
-});
+const inputTask=document.getElementById('task');
+const taskList=document.getElementById('todo');
+ addTask(){
+    let li=document.createElement('li');
+    li.textContent=inputTask;
+    document.getElementById('todo').appendChild(li);
+ };
