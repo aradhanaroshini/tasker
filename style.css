@@ -46,7 +46,7 @@
     transform:translate(-50%);
     cursor: pointer;
 }
-#buttons:active{
+#button:hover{
     background-color: #FFF9AF;
     color: #33A1E0;
 }
@@ -70,6 +70,7 @@
     height: 30px;
     width: 90px;
     border-radius: 20px;
+
 }
 .tasker{
     font-family: 'femme', Courier, monospace;
