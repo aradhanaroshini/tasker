@@ -1,5 +1,10 @@
+@font-face {
+    font-family:femme;
+    src: url(font/LafemmevibeRegular-DOD83.otf);
+}
+
 *{
-    background-color: F5FAE1;
+    background-color: #FFF9AF;
     margin:0;
 }
 .taskbox{
@@ -24,8 +29,8 @@
     transform: translate(-50%,-50%);
 }
 .podomoro{
-    background-color: aqua;
-    border: 5px solid black;
+    font-family: 'femme', Courier, monospace;
+    color: #154D71;
     height:50px;
     width:200px;
     padding:10px;
@@ -33,16 +38,24 @@
     position: absolute;
     left:42%;
     text-align: center;
-    font-size:40px;
+    font-size:70px;
 }
 .buttons{
     position: absolute;
     top:15%;
     left:50%;
     transform:translate(-50%);
+    cursor: pointer;
+}
+#buttons:active{
+    background-color: #FFF9AF;
+    color: #33A1E0;
 }
 #button{
-    background-color: aqua;
+    border: 2px solid #1C6EA4;
+    background-color: #33A1E0;
+    color: #FFF9AF;
+    font-family: 'femme', Courier, monospace;
     height: 50px;
     width:100px;
     border-radius: 20px;
@@ -53,19 +66,19 @@
     left:70%;
     transform: translate(-30%,-50%);
 }
-#button1{
+.button1{
     background-color: aqua;
     height: 30px;
     width: 90px;
     border-radius: 20px;
 }
 .tasker{
-    background-color: aqua;
+    font-family: 'femme', Courier, monospace;
+    color: #154D71;
     position: absolute;
     top:8%;
     left: 10%;
     transform: translate(-50%,-50%);
     text-align: center;
     font-size: 50px;
-    border: 5px solid black;
 }
