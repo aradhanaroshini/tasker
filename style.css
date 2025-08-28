@@ -2,14 +2,14 @@
     font-family:femme;
     src: url(font/LafemmevibeRegular-DOD83.otf);
 }
-
 *{
     background-color: #FFF9AF;
     margin:0;
 }
 .taskbox{
+    border: 2px solid #1C6EA4;
+    background-color: #33A1E0;
     font-size: 50px;
-    background-color: aqua;
     height: 400px;
     width:400px;
     padding: 10px;
@@ -18,8 +18,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.taskList{
+    background-color: #1C6EA4;
+    color: green;
+}
+.list{
+    background-color: #1C6EA4;
+}
 .taskadder{
-    background-color: aqua;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:3px solid #154D71;
+    font-family: 'femme', Courier, monospace;
+    font-weight: bold;
+    color: #154D71;
+    border-radius: 10px;
     height:30px;
     width:430px;
     position: absolute;
@@ -66,11 +80,17 @@
     transform: translate(-30%,-50%);
 }
 .button1{
-    background-color: aqua;
+    border: 2px solid #1C6EA4;
+    background-color: #33A1E0;
+    color: #FFF9AF;
+    font-family: 'femme', Courier, monospace;
     height: 30px;
     width: 90px;
     border-radius: 20px;
-
+}
+#addTask:hover{
+    background-color: #FFF9AF;
+    color: #33A1E0;
 }
 .tasker{
     font-family: 'femme', Courier, monospace;
