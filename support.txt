@@ -1,20 +1,86 @@
-<div>
+.podomoro{
+    font-family: 'femme', Courier, monospace;
+    color: #FF714B;
+    height:50px;
+    width:200px;
+    padding:10px;
+    margin-top:30px;
+    position: absolute;
+    left:42%;
+    text-align: center;
+    font-size:70px;
+}
+.buttons{
+    position: absolute;
+    top:15%;
+    left:50%;
+    transform:translate(-50%);
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #FFF9AF;
+    color: #FF714B;
+}
+.button{
+    border: 2px solid #1C6EA4;
+    background-color: #FF714B;
+    color: #FFF9AF;
+    font-family: 'femme', Courier, monospace;
+    height: 50px;
+    width:100px;
+    border-radius: 20px;
+}
+
+<div class="buttons">
+        
+        <button id="start" class="button">Start</button>
+        
+        
+        <button class="button">Stop</button>
+        
+        <button class="button">Reset</button>
+        
+    </div>
+
+    <div class="podomoro" id="'timer">
         <a>
             25:00
         </a>
     </div>
-    <div>
-        <button>Start</button>
-        <button>Stop</button>
-        <button>Reset</button>
-    </div>
-    <div class="taskbox">
-        taskbox
-    </div>
-    <div>
-        <input placeholder="task adder">
-    </div>
-    <div>
-        <button>Add</button>
-        <button>Remove</button>
-    </div>
+
+    let timer;
+let minutes=25;
+let seconds=0;
+let isPaused = false;
+document.getElementById('start').addEventListener('click',startTimer);
+function startTimer(){
+    timer = setInterval(updateTimer, 1000);
+}
+function updateTimer(){
+    const timervalue=document.getElementById('timer');
+    timervalue.textContent=formattime(minutes,seconds);
+    if (minutes==0 && seconds==0){
+        clearInterval(timer);
+        document.getElementById('timer').textContent=("TIMES UP!");
+    }
+    else if(!isPaused)
+    {
+        if(seconds>0){
+            seconds--;
+            console.log(seconds);
+        }
+        else
+        {
+            minutes--;
+            seconds=59;
+            console.log(seconds);
+            console.log(minutes);
+        }
+    }
+}
+function formattime(minutes,seconds){
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+
+

@@ -3,12 +3,21 @@
     src: url(font/LafemmevibeRegular-DOD83.otf);
 }
 *{
-    background-color: #FFF9AF;
+
     margin:0;
 }
+body{
+     background-image: url("images/Untitled\ design\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
 .taskbox{
     border: 2px solid #1C6EA4;
-    background-color: #33A1E0;
+    background-color: #FF714B;
+    border-radius: 10px;
     font-size: 50px;
     height: 400px;
     width:400px;
@@ -19,17 +28,20 @@
     transform: translate(-50%, -50%);
 }
 .taskList{
-    background-color: #1C6EA4;
-    color: green;
+    background-color: #FF714B;
+    color: #FFF9AF;
+    font-size: 30px;
+    font-family: 'femme', Courier, monospace;
 }
 .list{
-    background-color: #1C6EA4;
+    background-color: #FF714B;
 }
 .taskadder{
     border-left: none;
     border-right: none;
     border-top: none;
     border-bottom:3px solid #154D71;
+    background-color: #FF714B;
     font-family: 'femme', Courier, monospace;
     font-weight: bold;
     color: #154D71;
@@ -41,38 +53,9 @@
     left:50%;
     transform: translate(-50%,-50%);
 }
-.podomoro{
-    font-family: 'femme', Courier, monospace;
-    color: #154D71;
-    height:50px;
-    width:200px;
-    padding:10px;
-    margin-top:30px;
-    position: absolute;
-    left:42%;
-    text-align: center;
-    font-size:70px;
-}
-.buttons{
-    position: absolute;
-    top:15%;
-    left:50%;
-    transform:translate(-50%);
-    cursor: pointer;
-}
-#button:hover{
-    background-color: #FFF9AF;
-    color: #33A1E0;
-}
-#button{
-    border: 2px solid #1C6EA4;
-    background-color: #33A1E0;
-    color: #FFF9AF;
-    font-family: 'femme', Courier, monospace;
-    height: 50px;
-    width:100px;
-    border-radius: 20px;
-}
+
+
+
 .taskbutton{
     position: absolute;
     top:25%;
@@ -81,7 +64,7 @@
 }
 .button1{
     border: 2px solid #1C6EA4;
-    background-color: #33A1E0;
+    background-color: #FF714B;
     color: #FFF9AF;
     font-family: 'femme', Courier, monospace;
     height: 30px;
@@ -94,11 +77,11 @@
 }
 .tasker{
     font-family: 'femme', Courier, monospace;
-    color: #154D71;
+    color: #FF714B;
     position: absolute;
-    top:8%;
-    left: 10%;
+    top:12%;
+    left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    font-size: 50px;
+    font-size: 80px;
 }
